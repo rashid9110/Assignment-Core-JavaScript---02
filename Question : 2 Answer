@@ -1,0 +1,38 @@
+const age=[19,22,19,24,20,25,26,24,25,24]
+//sort the array
+age.sort((a,b)=>a-b)
+
+console.log("sorted age",age)
+maxAge=age[9];
+minAge=age[0]
+console.log("min age",minAge)
+console.log("max age",maxAge)
+
+//find the mid age of student
+let midAge;
+if(age.length%2===0){
+    const mid1=age[Math.floor(age.length/2)-1]
+    const mid2=age[Math.floor(age.length/2)]
+    midAge=(mid1+mid2)/2;
+}
+else{
+    midAge=age[Math.floor(age.length/2)]
+}
+console.log("Mid Age",midAge)
+
+//find the average age
+const sumage=age.reduce((sum,age)=>sum+age,0)
+const average=sumage/age.length;
+console.log("Average Age",average)
+
+//range of age
+const range=maxAge-minAge;
+
+console.log("Range of age",range)
+
+//compare (min-average) and (max-average)
+const minDiff=Math.abs(minAge-average)
+const maxDiff=Math.abs(maxAge-average)
+
+console.log("min - average Difference :",minDiff)
+console.log("max - average Difference :",maxDiff)
