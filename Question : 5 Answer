@@ -1,0 +1,22 @@
+//create the display function
+
+function display(name,roll){
+    console.log(`name ${name}, roll ${roll}`)
+}
+
+//use call to invoke display with specific argument
+display.call(null,"rashid",29)
+
+//use apply to invoke display with argument as an array
+
+display.apply(null,["rashid",30])
+
+//creat a great function
+function great (){
+    console.log(`Hello, ${this.name}`)
+}
+
+//use bind to creat a new function with a specific context
+const user={name:"rashid"};
+const boundgreat=great.bind(user)
+boundgreat();
