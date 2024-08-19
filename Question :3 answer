@@ -2,7 +2,7 @@
 
 const contactMap=new Map();
 
-//adding contacts to the map
+//adding contacts to the map;
 
 contactMap.set("rashid",{
     age:20,
