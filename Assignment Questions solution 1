@@ -3,6 +3,6 @@ question 1?
 
 const square=(num)=>num*num;
 
-let n=5;
+let n=5:
 console.log(square(n));
 
