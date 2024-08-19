@@ -1,0 +1,16 @@
+//create object
+const person1={
+    anme:"arshid",
+    age:20,
+};
+const person2={
+    name:"salamat",
+    age:20
+};
+//function
+function introduce(){
+    console.log(`Hello I am ${this.name}, and I am ${this.age} years old`);
+    console.log(name)
+}
+
+introduce.call(person2)
